@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee shop</title>
+    <link href="/main.css" rel="stylesheet">
+    <style>
+        #hero-section{
+            background-image: url(images/hero.jpeg);
+            background-size: cover;
+            background-position: center;    
+            height: 500px;
+        }
+        #menu-section{
+            background-color: rgb(253, 224, 71);
+            height: 500px;
+        }
+        .menubox{
+            transition: 1s ease;
+        }
+        .menubox:hover{
+            transform: translateY(-5px);
+        }
+        #about-section{
+            background-image: url(images/about.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+        #contact-section{
+            background-image: url(images/contact.avif);
+            background-size: cover;
+            background-position: center;    
+            height:500px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header class="bg-slate-600">
+        <ul class="flex justify-between">
+            <li class="text-white mr-5 font-bold text-2xl p-2">Coffee Shop</li>
+            <ul class="flex">
+                <a href="#menu-section"><li class="text-white mr-5 font-medium text-2xl p-2 hover:bg-slate-500">Menu</li></a>
+                <a href="#about-section"><li class="text-white mr-5 font-medium text-2xl p-2 hover:bg-slate-500">About</li></a>
+                <a href="#contact-section"><li class="text-white mr-5 font-medium text-2xl p-2 hover:bg-slate-500">Contact</li></a>
+            </ul>
+        </ul>
+    </header>
+
+    <main>
+        <section id="hero-section" class="flex items-center justify-center flex-col">
+            <h1 class="text-yellow-400 font-bold text-5xl p-8">Welcome to Coffee Shop</h1> 
+            <h3 class="text-yellow-400 font-semibold text-2xl p-8">Experience the finest coffee in town</h3>
+            <a href="#menu-section"><button type="button" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">View Menu</button>
+            </a>
+        </section>
+
+        <section id="menu-section" class="flex flex-col items-center text-center">
+            <h1 class="font-semibold text-2xl font-serif m-7">Our Menu</h1>
+            <h3 class="font-semibold text-xl font-serif mb-5">We work hard to serve up a cohesive experience across all of our locations and online. Whether you're visiting a neighborhood cafe, or ordering beans from across the country, you matter deeply to us.</h3> 
+            <div class="flex w-full justify-around">
+                <div class="menubox flex bg-yellow-200 h-52 w-52 flex-col items-center justify-center rounded-xl">
+                    <img src="images/coffe1.jpeg" alt="" class="pt-4 h-40 w-44 rounded-xl">
+                    <h3 class="font-semibold">Latte</h3>
+                    <h5 class="text-xs mb-1">Rich espresso with steamed milk</h5>
+                </div>
+
+                <div class="menubox flex bg-yellow-200 h-52 w-56 flex-col items-center justify-center rounded-xl">
+                    <img src="images/coffe2.jpeg" alt="" class="pt-4 h-40 w-44 rounded-xl">
+                    <h3 class="font-semibold">Mocha</h3>
+                    <h5 class="text-xs mb-1">Espresso, chocolate, and steamed milk</h5>
+                </div>
+
+                <div class="menubox flex bg-yellow-200 h-52 w-52 flex-col items-center justify-center rounded-xl">
+                    <img src="images/coffe3.jpeg" alt="" class="pt-4 h-40 w-44 rounded-xl">
+                    <h3 class="font-semibold">Cappuccino</h3>
+                    <h5 class="text-xs mb-1">Equal parts espresso, steamed milk, and milk foam</h5>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section" class="flex flex-col items-center justify-center">
+            <h1 class="text-black font-bold text-2xl p-5">About us</h1>
+            <p class="text-black font-semibold text-xl p-5">We source, curate, and roast so you can enjoy</p>
+            <p class="text-black font-semibold text-xl w-1/2 text-center">We've travelled around the globe, tasting thousands of coffees to create amazing options for you to brew at home.</p>
+        </section>
+
+        <section id="contact-section" class="flex flex-col justify-center items-center">
+            <h1 class="font-bold text-2xl pb-1">Contact Us</h1>
+            <p class="font-medium text-base">Address: 11-22 , ABC street, Xyz</p>
+            <form class="flex flex-col" action=”” method=””>
+                <input class="rounded-md m-3 text-center opacity-75" type=”text” minlength= 3 placeholder = "username" required>
+                <input class="rounded-md m-3 text-center opacity-75" type="email" placeholder = "email" required>
+                <input class="rounded-md m-3 p-5 text-center opacity-75" type=”text” maxlength= 400 placeholder = "Message" required>
+                <input type="submit" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-600">
+        <p class="text-white mr-5 font-semibold text-base p-2 text-center"> &copy; 2024 Coffee Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
